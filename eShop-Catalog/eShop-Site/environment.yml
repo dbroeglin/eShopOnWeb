@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://github.com/Azure/deployment-environments/releases/download/2022-11-11-preview/manifest.schema.json
+name: eShop-Site
+version: 1.0.0
+summary: Azure App Service Environment Deployment
+description: Deploys an Azure App Service
+runner: egimages.azurecr.io/ade:latest
+templatePath: main.bicep
+
+parameters:
+  - id: environmentName
+    name: Environment Name
+    description: 'Name of the the environment which is used to generate a short unique hash used in all resources.'
+    type: string
+    required: true
+  - id: repoUrl
+    name: AZD repository url
+    description: 'URL of the repository containing the application code.'
+    type: string
+    default: https://github.com/dotnet-architecture/eshoponweb-ignite
+    readOnly: true
