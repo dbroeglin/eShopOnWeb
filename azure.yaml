@@ -1,6 +1,13 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/wbreza/azure-dev/main/schemas/v1.0/azure.yaml.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/alpha/azure.yaml.json
 
 name: eShopOnWeb
+platform:
+  type: devcenter
+  config:
+    name: contoso-dc
+    project: eShop
+    catalog: eshoponweb-environments
+    environmentDefinition: eShop
 services:
   web:
     project: ./src/Web
