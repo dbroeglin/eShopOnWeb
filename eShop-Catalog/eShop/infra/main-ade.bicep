@@ -7,7 +7,7 @@ param name string
 
 @minLength(1)
 @description('Primary location for all resources')
-param location string = resourceGroup().location
+param location string = 'southcentralus'
 
 param webServiceName string = ''
 param catalogDatabaseName string = 'catalogDatabase'
