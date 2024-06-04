@@ -7,7 +7,7 @@ param environmentName string
 
 @minLength(1)
 @description('Primary location for all resources')
-param location string = resourceGroup().location
+param location string = 'southcentralus'
 
 // Optional parameters to override the default azd resource naming conventions. Update the main.parameters.json file to provide values. e.g.,:
 // "resourceGroupName": {
