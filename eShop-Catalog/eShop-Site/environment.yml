@@ -3,7 +3,7 @@ name: eShop-Site
 version: 1.0.0
 summary: Azure App Service Environment Deployment
 description: Deploys an Azure App Service
-runner: egimages.azurecr.io/ade:latest
+runner: nesdemopublic.azurecr.io/ade:latest
 templatePath: main.bicep
 
 parameters:

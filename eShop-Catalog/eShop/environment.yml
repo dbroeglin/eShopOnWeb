@@ -3,7 +3,7 @@ name: eShop
 version: 1.0.0
 summary: Full Stack for eShop
 description: Deploys an entire stack for eShop
-runner: egimages.azurecr.io/ade:latest
+runner: nesdemopublic.azurecr.io/ade:latest
 templatePath: infra/main-ade.bicep
 
 parameters:

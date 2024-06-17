@@ -2,5 +2,5 @@ name: Sandbox
 version: 1.0.0
 summary: Empty sandbox environment
 description: Deploys an empty sandbox environment
-runner: egimages.azurecr.io/ade:latest
+runner: nesdemopublic.azurecr.io/ade:latest
 templatePath: main.bicep
